@@ -35,8 +35,8 @@ public class SpecialistServlet extends HttpServlet {
             if (flag_status) {
                 httpSession.setAttribute("successMsg", "Specialist added Successfully");
 //                REDIRECT TO
-                response.sendRedirect("admin/view_doctor.jsp");
-//                response.sendRedirect("admin/index.jsp");
+//                response.sendRedirect("admin/view_doctor.jsp");
+                response.sendRedirect("admin/index.jsp");
             } else {
                 httpSession.setAttribute("errorMsg", "Something went wrong on server");
 //                REDIRECT TO

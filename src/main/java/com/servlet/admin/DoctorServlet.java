@@ -43,7 +43,8 @@ public class DoctorServlet extends HttpServlet {
             if (status_flag) {
                 httpSession.setAttribute("successMsg", "Doctor added Successfully");
 //                REDIRECT TO
-                response.sendRedirect("admin/view_doctor.jsp");
+//                response.sendRedirect("admin/view_doctor.jsp");
+                response.sendRedirect("admin/doctor.jsp");
             } else {
                 httpSession.setAttribute("errorMsg", "Something went wrong on server");
 //                REDIRECT TO

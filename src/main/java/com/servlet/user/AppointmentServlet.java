@@ -46,7 +46,8 @@ public class AppointmentServlet extends HttpServlet {
             if (status_flag) {
                 httpSession.setAttribute("successMsg", "Appointment Recorded Successfully");
 //                REDIRECT TO
-                response.sendRedirect("view_appointment.jsp");
+//                response.sendRedirect("view_appointment.jsp");
+                response.sendRedirect("user_appointment.jsp");
             } else {
                 httpSession.setAttribute("errorMsg", "Something went wrong on server");
 //                REDIRECT TO

@@ -26,7 +26,7 @@ public class AppointmentDAO {
             String query = "insert into appointment(userId,fullName,gender,age,appointmentDate,email,phone,disease,doctorId,address,status) values(?,?,?,?,?,?,?,?,?,?,?)";
 
             PreparedStatement preparedStatement = this.connection.prepareStatement(query);
-            preparedStatement.setInt(1, appointment.getID());
+            preparedStatement.setInt(1, appointment.getUserID());
             preparedStatement.setString(2, appointment.getFullName());
             preparedStatement.setString(3, appointment.getGender());
             preparedStatement.setString(4, appointment.getAge());

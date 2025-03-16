@@ -49,7 +49,8 @@ public class UpdateDoctorServlet extends HttpServlet {
             } else {
                 httpSession.setAttribute("errorMsg", "Something went wrong on server");
 //                REDIRECT PAGE TO
-                response.sendRedirect("admin/edit_doctor.jsp");
+//                response.sendRedirect("admin/edit_doctor.jsp");
+                response.sendRedirect("admin/view_doctor.jsp");
             }
         } catch (Exception exception) {
             System.out.println("\n\n\n\n\n"+exception.getMessage());
